@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/icons/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/showzalo.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/container.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Tùng Bất Động Sản</title>
+</head>
+
+<body>
+    <div class="grid">
+        <!-- HEADER -->
+        <header class="navbar">
+            <img class="logo" src="./assets/images/logo/logo.png">
+            <div class="navbar__content">
+
+                <ul class="navbar__list">
+                    <a class="navbar__text" href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Trang Chủ
+                    </a>
+                    <li  class="navbar__text">
+                        <i class="fa-solid fa-city"></i>
+                        Khách Sạn
+                    </li>
+     
+                    <li class="navbar__text">
+                        <i class="fa-solid fa-vials"></i>
+                        VILA
+                    </li>
+                    <li class="navbar__text">
+                        <i class="fa-solid fa-hotel"></i>
+                        HOMESTAY
+                    </li>
+                    <li class="navbar__text">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        RESORT
+                    </li>
+                    <li class="navbar__text">
+                        <i class="fa-solid fa-sailboat"></i>
+                        DU THUYỀN
+                    </li>
+                    <li id="intro-btn" class="navbar__text">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Giới thiệu
+                    </li>
+                    <li class="navbar__text">
+                        <i class="fa-solid fa-newspaper"></i>
+                        Tin Tức
+                    </li>
+                </ul>
+                <!-- <div class="search">
+                    <div class="search__bar">
+                        <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                        <div class="search__input">Tìm kiếm trà trọ</div>
+                        <button class="search__btn">
+                            Tìm kiếm
+                        </button>    
+                    </div>
+                    <div class="filter">
+                        <div id="price_filter" class="filter__box">
+                            <p>Mức giá</p>
+                            <i class="filter__icon fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="toogle-comp filter__with--price">
+                            <p class="filter__title">Mức giá</p>
+                            <div class="filter__range">
+                                <input class="filter__input" placeholder="Từ (triệu đồng)" type="text"/>
+                                <i class="filter__arrow fa-solid fa-arrow-down"></i>
+                                <input class="filter__input" placeholder="Đến (triệu đồng)" type="text"/>
+                            </div>
+                            <div class="filter__apply">
+                                <button class="filter__btn red">Đặt lại</button>
+                                <button class="filter__btn green">Áp dụng</button>
+                            </div>
+                        </div>
+        
+                        <div id='area_filter' class="filter__box">
+                            <p>Diện tích</p>
+                            <i class="filter__icon fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="toogle-comp filter__with--area">
+                            <p class="filter__title">Diện tích</p>
+                            <div class="filter__range">
+                                <input class="filter__input" placeholder="Từ (m²)" type="text"/>
+                                <i class="filter__arrow fa-solid fa-arrow-down"></i>
+                                <input class="filter__input" placeholder="Đến (m²)" type="text"/>
+                            </div>
+                            <div class="filter__apply">
+                                <button class="filter__btn red">Đặt lại</button>
+                                <button class="filter__btn green">Áp dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="./scripts/filter.js"></script>
+                </div> -->
+            </div>
+        </header>
+        <!-- SLIDER -->
+        <div class="slider">
+            <ul class="slider__list">
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide1.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide2.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide3.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide4.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide5.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide6.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide7.jpg"/>
+                </li>
+                <li class="slider__item">
+                    <img class='slider__img' src="./assets/images/slides/slide8.jpg"/>
+                </li>
+            </ul>
+            <div class="btn__list">
+                <button id="btn__pre" class="btn__slider"><</button>
+                <button id="btn__post" class="btn__slider">></button>
+            </div>
+            <div class="dot__list">
+                <i class="dot__item fa-solid fa-circle activate"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+                <i class="dot__item fa-solid fa-circle"></i>
+            </div>
+        </div>
+       <script src="./scripts/slider.js"></script>
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="container__header">
+                <h3>
+                    WINDHARM THANH THỦY
+                </h3>    
+                <div class="container__stars">
+                    <i class="fa-solid fa-star container__stars--icon"></i>
+                    <i class="fa-solid fa-star container__stars--icon"></i>
+                    <i class="fa-solid fa-star container__stars--icon"></i>
+                    <i class="fa-solid fa-star container__stars--icon"></i>
+                    <i class="fa-solid fa-star container__stars--icon"></i>
+                </div>
+                <div class="container__locationss">
+                    <i style="color: red; margin: 0 10px" class="fa-solid fa-location-dot"></i>
+                    <p class="">xã Bảo Yên, huyện Thanh Thủy, tỉnh Phú Thọ</p>
+                </div>
+            </div>
+            <ul class="container__navigation">
+                <li class="container__properties">
+                    <a href="" class="properties__link">
+                        <p class="properties__text">
+                            Tổng quan
+                        </p>
+                    </a>
+                </li>
+                <li class="container__properties">
+                    <a href="" class="properties__link">
+                        <p class="properties__text">
+                            Thông số
+                        </p>
+                    </a>
+                </li>
+                <li class="container__properties">
+                    <a href="" class="properties__link">
+                        <p class="properties__text">
+                            Quy định 
+                        </p>
+                    </a>
+                </li>
+                <li class="container__properties">
+                    <a href="" class="properties__link">
+                        <p class="properties__text">
+                            Q&A
+                        </p>
+                    </a>
+                </li>
+                <li class="container__properties">
+                    <a href="" class="properties__link">
+                        <p class="properties__text">
+                            Bình luận
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="container__content">
+                <p class="container__content--text">
+                    Wyndham Thanh Thủy là khu nghỉ dưỡng nổi tiếng và đẳng cấp bậc nhất ở Phú Thọ. Nơi đây được biết đến với các căn biệt thự hạng sang ẩn mình giữa thiên nhiên. Resort sẽ mang đến cho du khách một kỳ nghỉ đích thực. Hãy cùng Tico Travel khám phá những điều thú vị nhất về hệ thống phòng nghỉ cùng hệ tiện ích tại điểm lưu trú này nhé.
+                </p>
+                <p class="container__content--call">
+                    Liên hệ 0973.559.290 để biết thêm thông tin
+                </p>
+                <h1 class="container__content--header">
+                    1. MỘT SỐ NÉT CHÍNH VỀ WYNDHAM THANH THỦY 
+                </h1>
+                <p class="container__content--text">
+                    Cách Hà Nội chỉ hơn 1 giờ lái xe, Wyndham Thanh Thủy là nơi nghỉ dưỡng cuối tuần cực kỳ tưởng được nhiều người lựa chọn. Nằm tách biệt khỏi phố xá ồn ào, địa điểm này rất phù hợp cho những ai muốn tránh xa sự náo nhiệt và muốn tận hưởng sự thư thái giữa thiên nhiên hùng vĩ của Phú Thọ.
+                </p>
+                <img src="assets/images/slides/slide1.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Resort được xây dựng tích hợp giữa nhiều loại hình lưu trú khác nhau mang tiêu chuẩn cao cấp và khang trang. Từng phòng nghỉ và căn hộ tại đây đều thiết kế với sự tận tâm và tinh tế, đảm bảo mang lại trải nghiệm thoải mái và đẳng cấp cho quý khách. 
+                </p>
+                <img src="assets/images/contents/content2.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Ngoài việc cung cấp các hạng biệt thự, Wyndham Lynn Times Thanh Thủy còn nổi tiếng với hệ tiện ích chất lượng. Lưu trú ở resort này, bạn sẽ thoải mái trải nghiệm ở các quán bar, nhà hàng, phòng gym, hồ bơi, spa, nhất là khu khoáng nóng. Wyndham Thanh Thủy hứa hẹn sẽ khiến cho kỳ nghỉ của du khách thêm phần đặc biệt và đáng nhớ. 
+                </p>
+                <h1 class="container__content--header">
+                    2. ĐỊA CHỈ VÀ HƯỚNG DẪN DI CHUYỂN ĐẾN KHU NGHỈ DƯỠNG WYNDHAM THANH THỦY 
+                </h1>
+                <p class="container__content--text">
+                    Địa chỉ: xã Bảo Yên, huyện Thanh Thủy, tỉnh Phú Thọ
+                    Nằm ở huyện Thanh Thủy, Wyndham Resort Phú Thọ có vị trí khá đặc địa, gần với các địa điểm du lịch hấp dẫn. Nghỉ dưỡng ở đây, bạn dễ dàng đi tham quan khu du lịch đảo Ngọc Xanh, Đền Hùng, K9 Đá Chông. 
+                </p>
+                <img src="assets/images/contents/content3.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Từ Hà Nội, bạn có thể lựa chọn di chuyển đến Wyndham Thanh Thủy bằng xe khách, xe máy. Mỗi phương tiện đều có một ưu điểm riêng, vì vậy tùy vào yêu cầu, điều kiện của mình để bạn chọn cách thức đi lại vừa ý nhất. Nếu đi xe máy, du khách nên kiểm tra kỹ xe, chuẩn bị google map để tránh tình trạng đi lạc nhé. 
+                </p>
+                <h1 class="container__content--header">
+                    3. KHÁM PHÁ PHONG CÁCH KIẾN TRÚC CỦA WYNDHAM LYNN TIMES THANH THỦY 
+                </h1>
+                <p class="container__content--text">
+                    Lấy cảm hứng thiết kế từ Nhật Bản, Wyndham Thanh Thủy được mệnh danh là thiên đường nghỉ dưỡng với đầy đủ các tiện ích ấn tượng. Kiến trúc nơi đây kết hợp giữa vẻ đẹp hiện đại và truyền thống Á Đông, Việt Nam và Nhật Bản đã góp phần đem đến một khu resort đẳng cấp hàng đầu ở Phú Thọ. 
+                </p>
+                <img src="assets/images/contents/content4.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Ngay khi bước vào, du khách có thể bị choáng ngợp trước quy mô rộng rãi và cực kỳ hoành tráng. Tone màu trầm làm chủ đạo giúp cho điểm nghỉ dưỡng này không chỉ nổi bật vẻ sang chảnh mà còn vô cùng dễ chịu và thân quen. 
+                </p>
+                <p class="container__content--text">
+                    Địa điểm này gồm có khu khách sạn và khu biệt thự, cung cấp đủ hạng phòng lưu trú. Bạn sẽ vô cùng hài lòng về cách thiết kế tiện nghi, tinh tế. Khuôn viên của dự án Wyndham Thanh Thủy được điểm tô bởi sắc xanh của vô vàn cây xanh hay hồ nước trong veo. Vì thế, quanh năm ở resort luôn mát mẻ giúp bạn được tận hưởng những giây phút thư thái. Điểm đặc biệt của resort chính là hệ thống nguồn khoáng nóng chất lượng. 
+                </p>
+                <h1 class="container__content--header">
+                    4. HỆ THỐNG PHÒNG LƯU TRÚ CỦA WYNDHAM PHÚ THỌ
+                </h1>
+                <h1 class="container__content--header">
+                    4.1. Căn hộ khách sạn
+                </h1>
+                <p class="container__content--text">
+                    Với 2 tòa khách sạn, Wyndham Lynn Times Thanh Thủy đem đến hơn 2000 phòng nghỉ dưỡng hạng 5 sao. Những căn hộ thiết kế chỉn chu, nội thất được bố trí cẩn thận và chu đáo. Các kiến trúc sư khéo léo sắp xếp, decor từng chi tiết nhỏ để khiến phòng ngủ thêm phần rộng rãi và đẹp mắt.
+                </p>
+                <img src="assets/images/contents/content6.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Tại đây chia thành căn hộ 1 giường đến 3 giường, bạn có thể lựa chọn một phòng phù hợp với tài chính cũng như nhu cầu của mình. View phòng nghỉ hướng ra thiên nhiên xanh mát, du khách sẽ có một kỳ nghỉ vui vẻ và lý tưởng. Hạng căn hộ thường sẽ lý tưởng dành cho cặp đôi, người đi công tác hay gia đình nhỏ. 
+                </p>
+                <h1 class="container__content--header">
+                    4.2. Residential Suite với 2 phòng ngủ
+                </h1>
+                <p class="container__content--text">
+                    Hạng phòng tiếp theo tại Wyndham Thanh Thủy được nhiều người lựa chọn đó là Residential Suite 2 phòng ngủ. Hạng này được đánh giá với nét đẹp thanh lịch, sang trọng. Diện tích biệt thự này là 150m2 có kiến trúc mang nét đặc trưng của xứ sở hoa anh đào. Residential Suite có thể chứa được 4 người lớn hoặc gia đình nhỏ 5 người. Phòng khách cung cấp đủ bàn ghế sofa, tivi, máy pha cà phê nên quý khách hoàn toàn yên tâm nhé.
+                </p>
+                <img src="assets/images/contents/content7.jpg" alt="" class="container__content--img">
+                <img src="assets/images/contents/content8.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Không chỉ ấn tượng trong cách thiết kế, Residential Suite của Wyndham Thanh Thủy Resort còn có ban công riêng. Du khách nghỉ ngơi ở đây sẽ có cơ hội ngắm nhìn khung cảnh thiên nhiên xung quanh, nhâm nhi tách trà và trò chuyện cùng người thân. Lưu trú ở hạng phòng này, bạn cảm giác được sự tiện nghi và rộng rãi.
+                </p>
+                <h1 class="container__content--header">
+                    4.3. Residential Suite với 3 phòng ngủ
+                </h1>
+                <p class="container__content--text">
+                    Đến với Wyndham Thanh Thủy, bạn chưa biết nghỉ dưỡng ở đâu thì có thể book hạng Residential Suite 3 phòng ngủ. Đây là hạng phòng có quy mô lớn lên đến 210m2, được đánh giá là căn biệt thự diện tích rộng nhất, thiết kế đẹp nhất và quy mô lớn nhất. 
+                </p>
+                <img src="assets/images/contents/content9.jpg" alt="" class="container__content--img">
+                <img src="assets/images/contents/content10.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">Hạng phòng vừa đem đến phòng ngủ siêu rộng, vừa có phòng khách và phòng bếp riêng. Phòng khách là nơi mà cả gia đình bạn cùng nhau quây quần trò chuyện, xem phim, còn phòng bếp dùng để nấu các bữa ăn ngon. Ngoài ra, nơi đây còn có khu vực nướng bbq sân vườn đảm bảo khiến mọi du khách đều thích thú. Phòng Residential Suite của khu nghỉ dưỡng Wyndham Thanh Thủy chứa được nhóm bạn 6 người.
+                </p>
+                <h1 class="container__content--header">
+                    5. CÁC TIỆN ÍCH HẤP DẪN Ở WYNDHAM PHÚ THỌ
+                </h1>
+                <h1 class="container__content--header">
+                    5.1. Khu nhà hàng ẩm thực
+                </h1>
+                <p class="container__content--text">
+                    Nếu có cơ hội đến nghỉ dưỡng ở Wyndham Thanh Thủy, bạn đừng quên trải nghiệm ở khu nhà hàng Nhật. Với cách decor mang tính nghệ thuật, khu nhà hàng sở hữu nét đẹp của đất nước mặt trời mọc. Bạn có thể ghé nhà hàng Kyoto Deli hay OHAYO để thưởng thức vô vàn món ăn ngon. 
+                </p>
+                <img src="assets/images/contents/content11.jpg" alt="" class="container__content--img">
+
+                <p class="container__content--text">
+                    Nhà hàng sẽ phục vụ thực đơn đa dạng gồm buffet hải sản, món Nhật hay món Âu. Những món ăn địa phương tại đây cũng hứa hẹn không làm du khách phải thất vọng. 
+                </p>
+                <h1 class="container__content--header">
+                    5.2. Dịch vụ chăm sóc sức khỏe và sắc đẹp
+                </h1>
+                <h1 class="container__content--header">
+                    5.2.1 Khu bể bơi khoáng nóng
+                </h1>
+                <p class="container__content--text">
+                    Wyndham Thanh Thủy là điểm đến lý tưởng cho những ai đang tìm kiếm sự thư giãn trọn vẹn giữa thiên nhiên tươi đẹp. Nằm ở khu vườn xinh đẹp, khu bể bơi khoáng nóng ngoài trời hứa hẹn mang đến cho khách hàng những khoảnh khắc thú vị và thư thái.
+                </p>
+                <img src="assets/images/contents/content12.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Bên cạnh đó, khuôn viên của resort còn có bể bơi khoáng trong nhà giúp bạn ngâm mình tận hưởng thư giãn. Bể bơi đảm bảo an toàn, mực nước vừa phải nên du khách yên tâm nhé. 
+                </p>
+                <p class="container__content--text">
+                    Không gì có thể so sánh với việc thả mình vào bể bơi khoáng nóng, cảm nhận từng giọt nước ấm áp chảy dọc theo cơ thể và đánh thức mọi giác quan của bạn. Bể sục khoáng thảo dược tiếp tục nâng cao trải nghiệm này với hương thảo dược dịu nhẹ, giúp cơ thể và tinh thần sảng khoái.
+                </p>
+                <h1 class="container__content--header">
+                    5.2.2. Khu xông khô tại OHAYO Onsen 
+                </h1>
+                <p class="container__content--text">
+                    Một dịch vụ chăm sóc sức khỏe nổi bật ở Wyndham Thanh Thủy phải kể đến đó chính là khu xông khô. Sau khi tắm khoáng nóng, bạn hãy tới phòng xông khô để tận hưởng cảm giác nhẹ nhõm, giải tỏa căng thẳng. 
+                </p>
+                <img src="assets/images/contents/content13.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Với nhiều phương pháp khác nhau như xông hơi thảo dược, xông khô truyền thống hay xông tuyết lạnh, xông đá muối Himalaya, du khách sẽ cảm thấy sự dễ chịu. Xông khô không chỉ giúp thanh lọc cơ thể mà còn có tác dụng làm đẹp da, giảm mụn rõ rệt.
+                </p>
+                <h1 class="container__content--header">
+                    5.2.3. Dịch vụ Massage 
+                </h1>
+                <p class="container__content--text">
+                    Nếu bạn muốn đến trải nghiệm ở Wyndham Lynn Times Thanh Thủy thì đừng quên ghé thăm khu massage của resort nhé. Với đội ngũ kỹ thuật viên chuyên nghiệp, bạn sẽ cảm thấy vô cùng thư thái sau khi thử liệu trình massage. 
+                </p>
+                <img src="assets/images/contents/content14.jpg" alt="" class="container__content--img">
+ 
+                <p class="container__content--text">
+                    Du khách có thể sử dụng dịch vụ massage chân hoặc massage toàn thân. Vừa nghe bài nhạc chill, vừa hít thở hương thơm thoang thoảng trong một không gian dễ chịu, có khi bạn chìm vào giấc ngủ lúc nào không hay. 
+                </p>
+                <h1 class="container__content--header">
+                    5.3. Phòng thể dục tại Wyndham Thanh Thủy
+                </h1>
+                <p class="container__content--text">
+                    Phòng thể dục ở Wyndham Thanh Thủy resort là nơi hoàn hảo cho du khách có nhu cầu tập luyện và duy trì sức khỏe trong thời gian lưu trú tại khách sạn. Với việc trang bị đầy đủ các thiết bị tập luyện tiên tiến và hiện đại, bạn sẽ được thỏa mãn nhu cầu tập gym của mình một cách hiệu quả và thoải mái.
+                </p>
+                <img src="assets/images/contents/content15.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    5.4. Bể bơi vô cực
+                </h1>
+                <p class="container__content--text">
+                    Nghỉ dưỡng ở Wyndham Thanh Thủy Phú Thọ, bạn sẽ bị ấn tượng bởi thiết kế bể bơi vô cực. Tọa lạc ở tầng 30 của tòa khách sạn, bể bơi đem đến một tầm nhìn xịn sò, nơi mà bạn có thể thu trọn cảnh sắc núi non, sông nước cuồn cuộn. Du khách có cảm giác thích thú và mới lạ. Thư giãn ở bể bơi sau chuỗi ngày làm việc cũng khiến cho tâm hồn bạn thêm thoải mái. 
+                </p>
+                <img src="assets/images/contents/content16.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    5.5. Sky bar
+                </h1>
+                <p class="container__content--text">
+                    Sky bar ở resort Wyndham Phú Thọ là địa điểm được du khách đánh giá cao. Không chỉ có tầm nhìn cực đẹp, sky bar còn gây ấn tượng với thiết kế cầu kính độc đáo. Nơi này thường được lựa chọn để tổ chức các bữa tiệc thân mật vui vẻ. Hơn nữa, ngày cuối tuần tại đây còn diễn ra nhiều hoạt động giải trí với nhiều tiết mục đặc sắc.
+                </p>
+                <img src="assets/images/contents/content17.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    5.6. Phòng tổ chức hội họp, sự kiện
+                </h1>
+                <p class="container__content--text">
+                    Nhằm mong muốn đáp ứng nhu cầu của du khách một cách tốt nhất, Wyndham Thanh Thủy cung cấp hệ thống các phòng sự kiện, hội họp sang trọng. Thiết kế cẩn thận trong từng chi tiết, âm thanh ánh sáng set up chỉn chu. Đây sẽ là không gian cho những buổi sự kiện quan trọng được diễn ra suôn sẻ và thành công. 
+                </p>
+                <img src="assets/images/contents/content18.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    6. MỘT SỐ REVIEW CỦA DU KHÁCH VỀ WYNDHAM LYNN TIMES THANH THỦY 
+                </h1>
+                <p class="container__content--text">
+                    Trước khi có nhu cầu đặt phòng Wyndham Thanh Thủy để nghỉ dưỡng, bạn hãy tham khảo kỹ trước các đánh giá của du khách. Dưới đây là vài resort chân thực nhất mà Tico Travel tổng hợp:
+                    Nam Đỗ: “Khu nghỉ dưỡng mới xây, vẫn đang trong quá trình hoàn thiện. Dịch vụ tốt, chu đáo, hiện đại. Khu vực onsen khá rộng, có bảng hiển thị nhiệt độ nước trong bể. Sau khi tắm khoáng, có thể trải nghiệm các phòng xông khô nóng, lạnh”
+                    Thúy Nguyễn: “Phòng xịn, đúng chuẩn 5 sao. Mình mới thuê ở đây để tổ chức tiệc công ty, không có gì để chê. 100 điểm. Nhất định sẽ quay trở lại nếu có cơ hội”
+                    Phương Anh: “Gia đình mình vừa có kỳ nghỉ dưỡng ở Wyndham Thanh Thủy Phú Thọ. Theo cá nhân mình thấy mọi thứ ở đâu đều khá ok. Phòng đẹp, tiện ích đầy đủ và có nhiều hoạt động giải trí”.
+                </p>
+                <img src="assets/images/contents/content19.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    7. THÔNG TIN ĐẶT PHÒNG NGHỈ DƯỠNG Ở WYNDHAM THANH THỦY RESORT
+                </h1>
+                <p class="container__content--text">
+                    Nếu muốn book phòng tại resort, bạn hãy liên hệ theo thông tin bên dưới để được hỗ trợ tư vấn:
+                </p>
+                <ul class="container__content--list">
+                    <li class="container__content--item">
+                        Địa chỉ: xã Bảo Yên, huyện Thanh Thủy, tỉnh Phú Thọ
+                    </li>
+                    <li class="container__content--item">
+                        Số điện thoại:
+                    </li>
+                    <li class="container__content--item"></li>
+                    <li class="container__content--item"></li>
+                </ul>
+                <img src="assets/images/contents/content20.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    8. MỘT SỐ ĐỊA ĐIỂM DU LỊCH GẦN VỚI WYNDHAM THANH THỦY
+                </h1>
+                <h1 class="container__content--header">
+                    8.1. Khu du lịch Đảo Ngọc Xanh
+                </h1>
+                <p class="container__content--text">
+                    Địa chỉ: Xã La Phù, huyện Thanh Thủy, tỉnh Phú Thọ
+                    Nằm khá gần với Wyndham Phú Thọ là khu du lịch Đảo Ngọc Xanh. Quần thể sinh thái này có quy mô lớn, gồm nhiều loại hình giải trí khác nhau. Ghé thăm nơi này, bạn thỏa thích vui chơi ở bể bơi, khu trò chơi cảm giác mạnh, sân tennis. Trong khuôn viên của Đảo Ngọc Xanh còn có nhà hàng, phòng nghỉ để du khách có thể tận hưởng tối đa sự tiện ích.
+                </p>
+                <img src="assets/images/contents/content22.jpg" alt="" class="container__content--img">
+                <h1 class="container__content--header">
+                    8.2. Đền Lăng Sương
+
+                </h1>
+                <p class="container__content--text">
+                    Địa chỉ: Khu 6, xã Trung Nghĩa, huyện Thanh Thủy, tỉnh Phú Thọ
+                    Nếu bạn chưa biết nên đi đâu khi đến du lịch Thanh Thủy thì hãy tới Đền Lăng Sương. Di tích này là điểm đến cầu an, hạnh phúc và tài lộc. Dịp Tết đầu năm mới hay các ngày lễ rằm, rất nhiều du khách ở các địa phương lân cận ghé đến để chiêm bái. Đặc biệt,  Đền Lăng Sương thường xuyên có nhiều hoạt động văn hóa để hấp dẫn khách du lịch như hội hát Xoan, kéo co,…
+                </p>
+                <img src="assets/images/contents/content23.jpg" alt="" class="container__content--img">
+
+                <h1 class="container__content--header">
+                    8.3. Đồi chè Thanh Sơn
+                </h1>
+                <p class="container__content--text">
+                    Địa chỉ: xã Địch Quả, huyện Thanh Sơn, tỉnh Phú Thọ 
+                    Đồi chè Thanh Sơn là điểm đến hút khách bậc nhất ở Phú Thọ, sở hữu vị trí không quá xa so với khu nghỉ dưỡng Wyndham Thanh Thủy. Với cảnh quan thiên nhiên tuyệt đẹp, những đồi chè xanh trải dài tạo nên bức tranh đẹp mê hồn bao người ghé đến. Bạn tới đây sẽ thu trọn mọi thứ vào tầm mắt, vừa ngắm nhìn khung cảnh, vừa trải nghiệm hái chè. Đồi chè Thanh Sơn cũng là thiên đường dành cho tín đồ yêu thích check in. 
+                </p>
+                <img src="assets/images/contents/content24.jpg" alt="" class="container__content--img">
+                <p class="container__content--text">
+                    Wyndham Thanh Thủy thực sự là điểm đến nghỉ dưỡng mà bạn không thể bỏ qua. Khu resort 5 sao xứng đáng trở thành nơi để du khách gửi gắm kỳ nghỉ của mình. Tico Travel mong rằng những thông tin review trên đây sẽ giúp ích cho chuyến du lịch Phú Thọ sắp tới của bạn.
+                </p>
+            </div>
+            <!-- LAW -->
+            <h1 class="container__content--header">
+                QUY ĐỊNH CHUNG
+            </h1>
+            <ul class="container__content--list">
+                <li class="container__content--item">Nhận phòng lúc: 14h00</li>
+                <li class="container__content--item">Trả phòng lúc: 12h00</li>
+                <li class="container__content--item">Không cho phép mang theo vật nuôi</li>
+                <li class="container__content--item">Đặt cọc trước để giữ căn</li>
+                <li class="container__content--item">Phù hợp cho tất cả trẻ em ở mọi độ tuổi</li>
+                <li class="container__content--item">Chỗ nghỉ không có nôi cũi/ giường cũi cho trẻ nhỏ</li>
+                <li class="container__content--item">Không yêu cầu về độ tuổi khi nhận phòng</li>
+                <li class="container__content--item">Chấp nhận thanh toán bằng tiền mặt hoặc chuyển khoản online</li>
+                <li class="container__content--item">Quý khách vui lòng dọn dẹp, rửa chén bát, đồ dùng nấu bếp và xếp vào đúng nơi quy định. Trường hợp Quý khách không dọn rửa, chúng tôi sẽ tính phí phụ thu 200.000 đồng/ lần.</li>
+            </ul>
+            <p class="container__content--text">Liên hệ: 0973.599.290 để nhận được ưu đãi đặt phòng sớm nhất !</p>
+            <!--Answer-->
+            <div class="container__answer">
+                <div class="container__answer--title">
+                    Những câu hỏi thường gặp về  Whynham Thanh Thủy
+                </div>
+                <ul class="container__list__questions">
+                    <li class="container__answer--questions">Tôi phải đặt cọc bao nhiêu tiền khi thuê Wyndham Thanh Thủy?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+                    <li class="container__answer--questions">Thời gian check in - check out của biệt thự Wyndham Thanh Thủy?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+                    <li class="container__answer--questions">Nếu tôi muốn check in Wyndham Thanh Thủy sớm hơn 14h00 thì sao?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+                    <li class="container__answer--questions">Nếu tôi muốn check out muộn Wyndham Thanh Thủy thì sao?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+                    <li class="container__answer--questions">Tôi có thể đặt Wyndham Thanh Thủy tại Tico Travel với hình thức thanh toán nào?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+                    <li class="container__answer--questions">Giá thuê phòng Wyndham Thanh Thủy bao gồm những gì?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+                    <li class="container__answer--questions">Tôi có mất phí đặt phòng Wyndham Thanh Thủy không?<i class="fa-solid fa-caret-down container__answer--icon"></i></li>
+
+                </ul>
+            </div>
+        </div>
+
+    
+        <!-- FOOTER -->
+        <footer class="footer">
+            <img style="width: 300px;height: 300px;" src="assets/images/logo/logo.png"/>
+
+            <div class="footer__list">
+                <p class="footer__title">TÙNG NHÀ ĐẤT</p>
+                <div class="footer__item">
+                    <i class="footer__icon fa-solid fa-location-dot"></i>
+                    <p class="footer__text">Số 12 Ngõ 230, Tân Mai, Hoàng Mai, Hà Nội</p>
+                </div>
+                <div class="footer__item">
+                    <i class="footer__icon fa-solid fa-house-user"></i>
+                    <p class="footer__text">Chuyên viên tư vấn bất động sản</p>
+                </div>
+
+            </div>
+            <div class="footer__list">
+                <p class="footer__title">THÔNG TIN LIÊN HỆ</p>
+                <div class="footer__item">
+                    <i class="footer__icon fa-solid fa-location-dot"></i>
+                    <p class="footer__text">Số 12 Ngõ 230, Tân Mai, Hoàng Mai, Hà Nội</p>
+                </div>
+                <div class="footer__item">
+                    <i class="footer__icon fa-solid fa-phone-volume"></i>
+                    <p class="footer__text">(+84)973 599 290</p>
+                </div>
+
+                <p class="footer__text">Liên hệ khác</p>
+                <div class="footer__item">
+                    <img class="footer__img" src="assets/images/logo/facebook.jpg"/>
+                    <img class="footer__img" src="assets/images/logo/zalo.png"/>
+                    <img class="footer__img" src="assets/images/logo/gmail.png"/>
+                </div>
+            </div>
+        </footer>
+        <!-- INTRODUCTIOn -->
+        <div class="intro disable-scrollbars">
+            <div class="intro__view">
+                <div class="intro__exit">
+                    x
+                </div>
+                <div class="intro__header">
+                    <p class="intro__header--title">CHUYÊN VIÊN TƯ VẤN</p>
+                </div>
+                <div class="intro__view--profile">
+                    <img class="intro__profile--avatar" src="assets/images/admin/admin.jpg"/>
+                    <div class="intro__profile--info">
+                        <div class="profile__attribute">
+                            <p class="profile__text">Họ và tên:</p>
+                            <p class="profile__text">Đào Duy Tùng</p>
+                        </div>
+                        <div class="profile__attribute">
+                            <p class="profile__text">Giới tính:</p>
+                            <p class="profile__text">Nam</p>
+                        </div>
+                        <div class="profile__attribute">
+                            <p class="profile__text">Bio:</p>
+                            <p class="profile__text">Chuyên viên tư vấn bất động sản</p>
+                        </div>
+        
+                        <div class="profile__attribute">
+                            <p class="profile__text">Kinh nghiệm:</p>
+                            <p class="profile__text">10 năm chinh chiến</p>
+                        </div>
+                        <div class="profile__attribute">
+                            <p class="profile__text">Số điện thoại:</p>
+                            <p class="profile__text">0973599290</p>
+                        </div>
+                        <div class="profile__attribute">
+                            <p class="profile__text">Zalo:</p>
+                            <p class="profile__text link_text show_zalo">0973599290</p>
+                        </div>
+                        <div class="profile__attribute">
+                            <p class="profile__text">Facebook:</p>
+                            <a href="https://www.facebook.com/tenshi.shini/" class="link_text profile__text">Đào Duy Tùng</a>
+                        </div>
+                        <div class="profile__attribute">
+                            <p class="profile__text">Email:</p>
+                            <p class="profile__text">daoduytung9597@gmail.com</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="bio">
+                    <h3 class="bio__header">
+                        TIỂU SỬ
+                    </h3>
+                    <ul class="bio__content">
+                        <li class="bio__text">Đào Duy Tùng sinh ra trong một gia đình nghèo ở một vùng nông thôn tại Việt Nam. 
+                            Ông là con cả trong một gia đình có nhiều anh chị em. Từ nhỏ, ông đã phải đối mặt với nhiều khó khăn và thách thức 
+                            trong cuộc sống.
+                        </li>
+                        <li class="bio__text">Dù gia đình không có nhiều tài sản, nhưng bố mẹ ông luôn khuyến khích và hỗ trợ ông trong việc học hành. 
+                            Với sự cố gắng không ngừng nghỉ và lòng quyết 
+                            tâm vươn lên, Đào Duy Tùng đã dần khẳng định tài năng và năng lực của mình.
+                        </li>
+                        <li class="bio__text">
+                            Sau khi tốt nghiệp đại học, Đào Duy Tùng bắt đầu sự nghiệp của mình từ những công việc nhỏ trong lĩnh vực bất động sản. 
+                            Dù khó khăn và gặp nhiều thách thức, nhưng ông không bao giờ từ bỏ. Ông luôn nỗ lực học hỏi, phát triển 
+                            bản thân và tận dụng mọi cơ hội để tiến xa hơn trong sự nghiệp.
+                        </li>
+                        <li class="bio__text">
+                            Nhờ vào sự kiên trì, sự sáng tạo và tinh thần khởi nghiệp mạnh mẽ, Đào Duy Tùng dần dần thăng tiến và đạt được những thành
+                             công đáng kể. Ông đã thành lập và phát triển một tập đoàn bất động sản lớn mạnh, có uy tín trên thị trường.
+                        </li>
+                        <li class="bio__text">
+                            Với tinh thần không ngừng sáng tạo, ông luôn tìm kiếm cơ hội để mở rộng doanh nghiệp và đóng góp vào sự phát triển của 
+                            cộng đồng. Đào Duy Tùng không chỉ là một doanh nhân thành đạt mà còn là một người có tầm nhìn xa, luôn đặt lợi ích của 
+                            cộng đồng lên hàng đầu.
+                        </li>
+                        <li class="bio__text">
+                            Vượt qua mọi khó khăn và thử thách, Đào Duy Tùng đã trở thành một trong những doanh nhân hàng đầu trong lĩnh vực bất động 
+                            sản, là một điển hình cho sự nỗ lực, kiên trì và lòng quyết tâm vươn lên từ đất nước nghèo đến thành công lớn.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/intro.js"></script>
+    </div>
+    <!-- Connect -->
+    <div class="connect">
+        <!-- <div class="connect__link" style="display: flex;" href="">
+            <img class="link_img" src="assets/images/logo/call.png"/>
+        </div> -->
+        <a class="connect__link" href="https://www.facebook.com/tenshi.shini/">
+            <img class="link_img" src="assets/images/logo/facebook.jpg"/>
+        </a>
+        <div class="show_zalo connect__link" href="">
+            <img class="link_img" src="assets/images/logo/zalo.png"/>
+        </div>
+        <a class="connect__link" href="https://daoduytung9597@gmail.com">
+            <img class="link_img" src="assets/images/logo/gmail.png"/>
+        </a>
+    </div>
+    
+    <div class="show__zalo--qr">
+        <div class="zalo__view">
+            <p class="zalo__text">Kết bạn Zalo qua số điện thoại 0973.599.290 hoặc quét mã QR trong ứng dụng Zalo</p>
+            <img src="assets/images/zaloQR.jpeg" alt="zaloqr" class="zalo--qr">
+        </div>
+        <p class="zalo__text">Nhấn vào màn hình để tắt</p>
+    </div>
+    <script src="scripts/zaloexit.js"></script>
+
+    
+</body>
+
+</html>

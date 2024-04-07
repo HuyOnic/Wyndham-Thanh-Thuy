@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 0px;
+    background-color: var(--primary-color);
+}
+.footer__list{
+
+}
+.footer__item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.footer__icon{
+    color: var(--white-color);
+    font-size: 20px;
+    margin: 0 10px;
+}
+.footer__title{
+    color: var(--white-color);
+    font-size: 20px;
+}
+.footer__text{
+    color: var(--white-color);
+}
+.footer__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    margin:0 20px
+}

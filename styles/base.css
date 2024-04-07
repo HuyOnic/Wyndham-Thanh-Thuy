@@ -1,0 +1,88 @@
+:root {
+    --primary-color:#1f4aad;
+    --secondary-color:#f4b24c;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #ECF0F1;
+    --yellow-color:#f7d684;
+    --red-color:#E03C31;
+    --text-color:#515A5A;
+    --primary-bg: linear-gradient(to bottom right,#1f4aad,#fff )
+}
+
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    list-style: none;
+}
+p{
+    line-height: 25px;
+    text-align: center;
+    align-content: center;
+}
+button{
+    outline: none;
+    border:none
+}
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.grid {
+    width: 1400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+p {
+    font-size: 16px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+.red{
+    background-color:#E03C31
+}
+.green{
+    background-color:#3faa6d;
+}
+.green-text{
+    color: #3faa6d;
+}
+.toogle-comp{
+    display: none;
+}
+.activate{
+    color: var(--white-color);
+}
+.link_text{
+    cursor: pointer;
+    color: var(--red-color);
+}
+.link_text:hover{
+    opacity: .5;
+}
